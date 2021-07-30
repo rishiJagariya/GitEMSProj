@@ -30,6 +30,7 @@ Employee emp;
 
 		System.out.println("Enter your Department :");
 		emp.setDept(sc.next());
+		empList.add(emp);
 		return empList;
 
 	}
