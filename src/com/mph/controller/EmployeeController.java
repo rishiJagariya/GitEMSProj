@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
+
+import com.mph.model.Employee;
 public abstract class EmployeeController {
 Employee emp;
 	List<Employee> empList = new ArrayList<>();
@@ -57,6 +59,8 @@ Employee emp;
 		System.out.println("Employee details:");
 		empList.forEach(System.out::println);
 	}
+
+	public abstract void sortEmployeeByName(List elist);
 
 	
 }

@@ -36,5 +36,9 @@ public Employee() {
 	super();
 	// TODO Auto-generated constructor stub
 }
+public void setEmpname(String next) {
+	// TODO Auto-generated method stub
+	
+}
 
 }
