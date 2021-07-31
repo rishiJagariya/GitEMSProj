@@ -21,7 +21,8 @@ public class MainClass{
 			System.out.println("3. serialized");
 			System.out.println("4. deserialized");
 			System.out.println("5. sort by name");
-			System.out.println("6. Exit");
+			System.out.println("6. sort by Dept");
+			System.out.println("7. Exit");
 			int choice = sc.nextInt();
 	
 			switch (choice) {
