@@ -12,14 +12,13 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 
 import com.mph.model.Employee;
-public abstract class EmployeeController {
-Employee emp;
+public class EmployeeController implements EmployeeControllerInterface{
+	Employee emp;
 	List<Employee> empList = new ArrayList<>();
-     public List<Employee> addEmployee() {
+    
+	public List<Employee> addEmployee() {
 		emp = new Employee();
-
 		
-       @SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter your Emp Number:");
@@ -27,41 +26,30 @@ Employee emp;
 		emp.setEmpno(eno);
 
 		System.out.println("Enter your name :");
-		emp.setEmpname(sc.next());
-
-
+		emp.setEname(sc.next());
+		
 		System.out.println("Enter your Department :");
 		emp.setDept(sc.next());
+		
 		empList.add(emp);
 		return empList;
-
 	}
 
-	public void serializeEmp(@SuppressWarnings("rawtypes") List elist) throws IOException {
-		
-
-	}
-
-	public void deSerializeEmp(@SuppressWarnings("rawtypes") List elist) throws Exception {
-
-		
-
-	}
-
-	@SuppressWarnings("unchecked")
-	public void sortEmpDetails(@SuppressWarnings("rawtypes") List list) {
-		System.out.println("Sorted function under progress");
+	public void serializeEmp(List elist)  {
 		
 	}
 
-	@SuppressWarnings("unchecked")
-	public void viewEmployee(@SuppressWarnings("rawtypes") List empList) {
+	public void deSerializeEmp( List elist)  {
+		
+	}
+
+	public void sortEmpDetails( List list) {
+		System.out.println("Sorted function under progress");	
+	}
+
+	public void viewEmployee(List empList) {
 		System.out.println("Employee details:");
 		empList.forEach(System.out::println);
 	}
-
-	public abstract void sortEmployeeByName(List elist);
-
-	
 }
 
