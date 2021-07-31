@@ -30,11 +30,11 @@ public class MainClass{
 
 			break;
 		case 3: 
-			ec.serializeemp(elist);
+			ec.serializeEmployee(elist);
 
 			break;
 		case 4:
-			ec.deSerializeEmp(elist);
+			ec.deSerializeEmployee(elist);
 
 			break;
 		case 5:
