@@ -32,6 +32,7 @@ public class EmployeeController implements EmployeeControllerInterface{
 		emp.setDept(sc.next());
 		
 		empList.add(emp);
+		System.out.println("Employee added successfully");
 		return empList;
 	}
 
