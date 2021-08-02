@@ -10,6 +10,7 @@ public class MainClass{
 
 	public static void main(String[] args) {
 		System.out.println("Welcome To EMS!!!");
+		System.out.println("Welcome To EMS!!!");
 		EmployeeControllerInterface ec = new EmployeeController();
 		Scanner sc = new Scanner(System.in);
 		List elist = null;
